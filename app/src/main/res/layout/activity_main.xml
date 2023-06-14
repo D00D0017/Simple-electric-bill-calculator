@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical"
+        android:paddingLeft="19dip"
+        android:paddingRight="19dip"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+
+        <EditText
+            android:id="@+id/kilowattEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kilowatt per hour (kWh)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF " />
+
+        <EditText
+            android:id="@+id/percentageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="percentage"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF " />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Calculate"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:iconTint="#F8F3F3" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:textColor="#FAF8F8"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
