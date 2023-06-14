@@ -61,6 +61,15 @@
             android:textColor="#F4F1F1"
             android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/github_url"
+            android:textAlignment="center"
+            android:textColor="#F4EFEF"
+            android:autoLink="web"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
